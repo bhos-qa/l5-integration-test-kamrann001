@@ -15,8 +15,8 @@ To begin,you have to add framework support for the Spring framework and download
 
 - And build and run the test
 
-![image1](C:\Users\ACER\Desktop\ders\qa\gradlew.png)
+![](img/gradlew.png)
 
 Test run:
 
-![](../../Desktop/ders/qa/test.png)
+![](img/test.png)
