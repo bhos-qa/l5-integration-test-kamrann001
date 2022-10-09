@@ -19,17 +19,20 @@ public class Springproj1Test{
         ResponseEntity<String> response = restTemplate.exchange("https://60a21d3f745cd70017576092.mockapi.io/api/v1/repos", HttpMethod.GET, entity, String.class);
         assertEquals( MediaType.APPLICATION_JSON, response.getHeaders().getContentType());
     }
+
     @Test
     public void commitsTest(){
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
         ResponseEntity<String> response = restTemplate.exchange("https://60a21d3f745cd70017576092.mockapi.io/api/v1/repos/1/branches/1/commits", HttpMethod.GET, entity, String.class);
         assertEquals( MediaType.APPLICATION_JSON, response.getHeaders().getContentType());
     }
+
     @Test
     public void branchesTest(){
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
         ResponseEntity<String> response = restTemplate.exchange("https://60a21d3f745cd70017576092.mockapi.io/api/v1/repos/1/branches", HttpMethod.GET, entity, String.class);
         assertEquals( MediaType.APPLICATION_JSON, response.getHeaders().getContentType());
     }
+
 
 }
